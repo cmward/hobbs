@@ -236,22 +236,22 @@ def number_match(tree, pos, pro):
 	""" Takes a proposed antecedent and pronoun and checks whether 
 	they match in number.
 	"""
-	m = {"NN":   		"singular",
-		 "NNP":  		"singular",
-		 "he":   		"singular",
-		 "she":  		"singular",
-		 "him":  		"singular",
-		 "her":  		"singular",
-		 "it":   		"singular",
-		 "himself": 	"singular",
-		 "herself": 	"singular",
-		 "itself":  	"singular",
-		 "NNS":  		"plural",
-		 "NNPS": 		"plural",
-		 "they": 		"plural",
-		 "them": 		"plural",
-		 "themselves": 	"plural",
-		 "PRP":   		None}
+	m = {"NN":          "singular",
+		 "NNP":         "singular",
+		 "he":          "singular",
+		 "she":         "singular",
+		 "him":         "singular",
+		 "her":         "singular",
+		 "it":          "singular",
+		 "himself":     "singular",
+		 "herself":     "singular",
+		 "itself":      "singular",
+		 "NNS":         "plural",
+		 "NNPS":        "plural",
+		 "they":        "plural",
+		 "them":        "plural",
+		 "themselves":  "plural",
+		 "PRP":None}
 	
 	# if the label of the nominal dominated by the proposed NP and 
 	# the pronoun both map to the same number feature, they match 
