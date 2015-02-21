@@ -1,11 +1,7 @@
 hobbs.py
 ________
 
-Run the program as 
-
-	python hobbs.py demo
-
-to see a demo of the coreference resolution algorithms.
+Enter 'demo' to see a demo.
 
 Otherwise, enter a file containing parsed sentences to search, with
 one sentence per line, and then enter the pronoun you'd like to resolve, e.g., 
@@ -14,7 +10,7 @@ one sentence per line, and then enter the pronoun you'd like to resolve, e.g.,
 	python hobbs.py demosents.txt “it”
 	python hobbs.py demorefl.txt “herself”
 
-The sentences should use Treebank tags and be parsed such that they can be converted into
+The sentences must use Treebank tags and be parsed such that they can be converted into
 NLTK Trees. The pronoun must be in the last sentence of the file.
 
 This program uses Hobbs’ algorithm to find the antecedent of a pronoun.
