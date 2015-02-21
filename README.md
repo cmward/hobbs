@@ -1,7 +1,7 @@
 hobbs.py
 ________
 
-Enter 'demo' to see a demo.
+Enter python hobbs.py demo to see a demo.
 
 Otherwise, enter a file containing parsed sentences to search, with
 one sentence per line, and then enter the pronoun you'd like to resolve, e.g., 
