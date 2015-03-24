@@ -263,11 +263,11 @@ def number_match(tree, pos, pro):
 
 def gender_match(tree, pos, pro):
     """ Takes a proposed antecedent and pronoun and checks whether
-    they match in number. Only checks for mismatches between singular
+    they match in gender. Only checks for mismatches between singular
     proper name antecedents and singular pronouns.
     """
-    male_names = [name.lower() for name in names.words('male.txt')]
-    female_names = [name.lower() for name in names.words('female.txt')]
+    male_names = (name.lower() for name in names.words('male.txt'))
+    female_names = (name.lower() for name in names.words('female.txt'))
     male_pronouns = ["he", "him", "himself"]
     female_pronouns = ["she", "her", "herself"]
     neuter_pronouns = ["it", "itself"]
@@ -489,7 +489,7 @@ def main(argv):
             p = ["He", "he", "Him", "him", "She", "she", "Her",
                 "her", "It", "it", "They", "they"]
             r = ["Himself", "himself", "Herself", "herself",
-            "Itself", "itself", "Themselves", "themselves"]
+                "Itself", "itself", "Themselves", "themselves"]
             fname = sys.argv[1]
             pro = sys.argv[2]
             with open(fname) as f:
